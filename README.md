@@ -1,2 +1,2 @@
 # MyItem
-Create custom items and store them 
+Create Item With Many Interesting Features
