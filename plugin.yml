@@ -1,0 +1,6 @@
+name: MyItem
+main: BeeAZ\MyItem\Main
+api: 4.0.0
+version: 0.0.1
+author: BeeAZ
+description: Create custom items with full features
