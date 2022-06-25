@@ -1,0 +1,43 @@
+#Sorry My English Is Not Good, I Have To Depend On Google Translate
+message:  
+  default-help: "&6------------\n&bMyItem Commands:\n &6/mi setname: &f[&aName weapon&f]\n &6/mi setlore: &f[&aSet weapon lore&f]\n &6/mi id: &f[&aView enchant id of equipment&f]\n &6/mi addenchant: &f[&aAdd enchant to weapon&f]\n &6/mi save: &f[&aSave item to archive&f]\n &6/mi list: &f[&aList item in storage&f]\n &6/mi take: &f[&aRemove item from archive&f]\n &6/mi delete: &f[&aDelete item from archive&f]\n&6-------------"
+  help: "&7Usage &6/mi help"
+  none-item: "&7You Must Hold Weapons In Your Hands"
+  not-found-item: "&7Weapons Not Found In Your Inventory"
+  use-in-game: "&cPlease Use Command In Game !"
+
+setname:
+  help: "&7Usage: &6/mi name &7[NAME]."
+  success: "&7You have successfully set the name"
+
+setlore:
+  help: "&7Usage: &6/mi lore &7[LORE]."
+  success: "&7You have successfully set lore for the item"
+
+addenchant:
+  help: "&7Usage: &6/mi addenchant &7[ID EHCHANT] [LEVEL]."
+  error-num-en: "&7ID ENCHANT not found. Usage &6/mi idenchant &7let's see ID."
+  error-level: "&7Level Not Found"
+  error-level-30000: "&7Level Not Exceeded &d30000&c."
+  success: "&7You have successfully added enchant to the item."
+
+idenchant:
+  id: "PROTECTION = 0, FIRE_PROTECTION = 1, FEATHER_FALLING = 2, BLAST_PROTECTION = 3, PROJECTILE_PROTECTION = 4, THORNS = 5, RESPIRATION = 6, DEPTH_STRIDER = 7, AQUA_AFFINITY = 8, SHARPNESS = 9, SMITE = 10, BANE_OF_ARTHROPODS = 11, KNOCKBACK = 12, FIRE_ASPECT = 13, LOOTING = 14, EFFICIENCY = 15, SILK_TOUCH = 16, UNBREAKING = 17, FORTUNE = 18, POWER = 19, PUNCH = 20, FLAME = 21, INFINITY = 22, LUCK_OF_THE_SEA = 23, LURE = 24, FROST_WALKER = 25, MENDING = 26, BINDING = 27, VANISHING = 28, IMPALING = 29, RIPTIDE = 30, LOYALTY = 31, CHANNELING = 32, MULTISHOT = 33, PIERCING = 34, QUICK_CHARGE = 35, SOUL_SPEED = 36"
+
+save:
+  help: "&7Usage: &6/mi save &7[NAME]."
+  already-name-save: "&7Item Exists."
+  success: "&7You Have Stored the Item Into Repository."
+
+take:
+  help1: "&7Usage: &6/mi take &7[NAME]."
+  help2: "&7If you forget the saved ITEM, please &6/mi list&7."
+  success: "You Have Successfully Retrieved Item From Repository"
+
+delete:
+  help: "&7Usage: &6/mi delete &7[NAME]."
+  success: "&7Deleted Item With This Name In Archive"
+  
+list:
+  none-item: "&7There are no ITEMs in the Archive yet"
+  save: "&7ITEM SAVE : "

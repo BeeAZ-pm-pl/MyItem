@@ -1,6 +1,13 @@
 name: MyItem
-main: BeeAZ\MyItem\Main
+author: BeeAZ
 api: 4.0.0
 version: 0.0.1
-author: BeeAZ
-description: Create custom items with full features
+main: BeeAZ\MyItem\Main
+
+commands: 
+  mi:
+    description: Upgrade , Enhance , Store Item 
+    permission: myitem.edit
+permissions:
+ myitem.edit:
+  default: op
