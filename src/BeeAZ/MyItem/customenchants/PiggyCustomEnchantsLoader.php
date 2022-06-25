@@ -25,8 +25,11 @@ final class PiggyCustomEnchantsLoader {
             self::$customEnchants = $ce;
             return true;
         }
-        if($ce instanceof PiggyCustomEnchants) self::$isNewVersion = true;
-        else self::$isNewVersion = false;
+        if($ce instanceof PiggyCustomEnchants){
+            self::$isNewVersion = true;
+        }else{ 
+            self::$isNewVersion = false;
+      }
     }
 
     public static function isNewVersion() : bool {
