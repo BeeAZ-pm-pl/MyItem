@@ -34,6 +34,10 @@ class Main extends PluginBase implements Listener {
     
     public static $namesave;
 
+    public $storage;
+
+    public $message;
+
     const PREFIX = "§6§6[§aMyItem§6]: ";
 
     public const ITEM_FORMAT = [
@@ -59,7 +63,7 @@ class Main extends PluginBase implements Listener {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         
 }
-    public function onCommand(Commandsender $player, Command $cmd, string $label, array $args) : bool{
+    public function onCommand(CommandSender $player, Command $cmd, string $label, array $args) : bool{
         if($player instanceof Player){
         $item = $player->getInventory()->getItemInHand();
         switch($cmd->getName()){
