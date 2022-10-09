@@ -293,8 +293,8 @@ class Main extends PluginBase implements Listener {
           }
          $item->setLore($lore);
           }
-          return $item;
     }
+   return $item;
     }
     
      public static function itemToData(Item $item) : array {
