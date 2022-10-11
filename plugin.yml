@@ -1,7 +1,7 @@
 name: MyItem
 author: BeeAZ
 api: 4.0.0
-version: 0.0.1
+version: 0.0.2
 main: BeeAZ\MyItem\Main
 softdepend: ["PiggyCustomEnchants"]
 
@@ -10,5 +10,5 @@ commands:
     description: Upgrade , Enhance , Store Item 
     permission: myitem.edit
 permissions:
- myitem.edit:
-  default: op
+  myitem.edit:
+    default: op
