@@ -35,7 +35,6 @@ class Main extends PluginBase implements Listener {
     $this->saveResource("message.yml");
     $this->storage = new Config($this->getDataFolder() . "storage.yml", Config::YAML);
     $this->message = new Config($this->getDataFolder() . "message.yml", Config::YAML);
-    PiggyCustomEnchantsLoader::load();
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
   }
   public function onCommand(CommandSender $player, Command $cmd, string $label, array $args): bool {
