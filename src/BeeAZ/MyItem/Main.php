@@ -243,13 +243,16 @@ class Main extends PluginBase implements Listener {
 
 
 
-  public static function dataToItem($itemData): Item {
-    return Item::nbtDeserialize($itemData);
-  }
+    public static function itemToData(Item $item): string {
+        $cloneItem = clone $item;
+        $itemNBT = $cloneItem->nbtSerialize();
+        return base64_encode(serialize($itemNBT));
+    }
 
-  public static function itemToData(Item $item) {
-    return $item->nbtSerialize();
-  }
+    public static function dataToItem(string $item): Item{
+        $itemNBT = unserialize(base64_decode($item));
+        return Item::nbtDeserialize($itemNBT);
+    }
 
   public function getMessage(string $key, array $tags = []): string {
     return Utils::translateColorTags(str_replace(array_keys($tags), $tags, $this->message->getNested($key, $key)));
